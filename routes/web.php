@@ -12,5 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect(route('home'));
 });
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/add/{id}','Admin\SimpleController@add_task')->name('add');
+
+Route::resource('users','Admin\UserController');
+Route::resource('tasks','Admin\TaskController');
+
+
