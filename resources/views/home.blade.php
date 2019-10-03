@@ -33,14 +33,18 @@
                             @foreach($tasks as $task)
                     @endforeach
                              @foreach($users as $user)
-                            <div >
+                            <div>
                             <div style="width:100px;position: relative; display: inline-block;margin-top: 5px;margin-bottom: 5px;font-weight: bold;text-align: center;">
                                 <a href="/add/{{$user['id']}}">{{$user->name}}</a></div>
 
                             @foreach($tasks as $task)
                                 @if($user['id']==$task['user_id'])
+                                    @if($task['status']==1)
+                                            <a href="{{route('tasks.show',$task->id)}}"><div title="{{$task['title']}}" style="background:repeating-linear-gradient(45deg,{{$colors[$task->color_id]}},{{$colors[$task->color_id]}} 10px,#3d6f8e 10px,#3d6f8e 20px); width:{{$times[$task->time_id]*100}}px;position:absolute; left:{{$task->start_time_id * 50+100}}px;display: inline-block;height: 25px;margin-top: 5px;margin-bottom: 5px">
+                                        @else
                                        <a href="{{route('tasks.show',$task->id)}}"><div title="{{$task['title']}}" style="background:{{$colors[$task->color_id]}}; width:{{$times[$task->time_id]*100}}px;position:absolute; left:{{$task->start_time_id * 50+100}}px;display: inline-block;height: 25px;margin-top: 5px;margin-bottom: 5px">
-                                    </div></a>
+                                    @endif
+                                           </div></a>
                                     @endif
                             @endforeach
                           @endforeach
