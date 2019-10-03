@@ -70,9 +70,14 @@
                             </select>
                             <br>
                             <br>
-                            <div> <b>Completed</b>
+                            <div><b>Completed</b>
                                 @if($task['status']==1)
-                                <input type="checkbox" name="status" value="1" checked id="hello1">
+
+
+                                    <input type="checkbox" id="123" name="status" value="1" onclick="func();" checked/>
+                                    <input type="hidden" id="100" name="status" value="0" disabled/>
+
+
                                     @else
                                     <input type="checkbox" name="status" value="1">
                                     @endif
@@ -82,12 +87,16 @@
                         </div>
                         <br>
                         <script>
-                            if(document.getElementById("hello1").checked && $task['status']==1) {
-                            document.getElementById("hello1").checked = false;
-                            }
 
-                            else {
-                                document.getElementById("hello2").value = 0;
+                            function func(){
+                                if(document.getElementById("123").checked==false)
+                                {
+
+                                    document.getElementById("100").disabled=false;
+                                }
+                                else {
+                                    document.getElementById("100").disabled=true;
+                                }
                             }
                         </script>
                         <input type="submit" value="Save">
@@ -100,4 +109,5 @@
             </div>
         </div>
     </div>
+
 @endsection
