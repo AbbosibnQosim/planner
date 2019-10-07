@@ -18,7 +18,7 @@
                         <thead >
                         <tr>
 
-                            <th style="border: 1px solid #dddddd; text-align: left;padding: 8px;">User name</th>
+                            <th style="border: 1px solid #dddddd; text-align: center;padding: 8px;">User name</th>
                             <th style="border: 1px solid #dddddd; text-align: center;padding: 8px;">Saturday</th>
                             <th style="border: 1px solid #dddddd; text-align: center;padding: 8px;">Sunday</th>
                             <th style="border: 1px solid #dddddd; text-align: center;padding: 8px;">Monday</th>

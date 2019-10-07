@@ -44,7 +44,7 @@ class TaskController extends Controller
        $taskData=$request->all();
        $taskData['status']=0;
        Task::create($taskData);
-        return redirect(route('tasks.index'));
+        return redirect(route('home'));
     }
 
 
