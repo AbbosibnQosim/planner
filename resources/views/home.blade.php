@@ -49,9 +49,9 @@
                             @foreach($tasks as $task)
                                 @if($user['id']==$task['user_id'])
                                     @if($task['status']==1)
-                                            <a href="{{route('tasks.show',$task->id)}}"><div title="{{$task['title']}}" style="text-align:center;background:repeating-linear-gradient(45deg,{{$colors[$task->color_id]}},{{$colors[$task->color_id]}} 10px,#3d6f8e 10px,#3d6f8e 20px); width:{{$times[$task->time_id]*12.5}}%;position:absolute; left:{{$task->start_time_id * 6.25+12.5}}%;display: inline-block;height: 25px;margin-top: 5px;margin-bottom: 5px; color:#202138;">
+                                            <a href="{{route('tasks.show',$task->id)}}"><div title="{{$task['title']}}" style="letter-spacing: .00625em;font-weight: 400;font-size: 1rem;font-family: Roboto,Arial,sans-serif;text-align:center;background:repeating-linear-gradient(45deg,{{$colors[$task->color_id]}},{{$colors[$task->color_id]}} 10px,#e8eaed 10px,#e8eaed 20px); width:{{$times[$task->time_id]*12.5}}%;position:absolute; left:{{$task->start_time_id * 6.25+12.5}}%;display: inline-block;height: 25px;margin-top: 5px;margin-bottom: 5px; color:#202138;">
                                         @else
-                                       <a href="{{route('tasks.show',$task->id)}}"><div title="{{$task['title']}}" style="background:{{$colors[$task->color_id]}}; width:{{$times[$task->time_id]*12.5}}%;position:absolute; left:{{$task->start_time_id * 6.25+12.5}}%;display: inline-block;height: 25px;margin-top: 5px;margin-bottom: 5px;text-align:center;color:#202138;">
+                                       <a href="{{route('tasks.show',$task->id)}}"><div title="{{$task['title']}}" style="letter-spacing: .00625em;font-weight: 400;font-size: 1rem;font-family: Roboto,Arial,sans-serif;background:{{$colors[$task->color_id]}}; width:{{$times[$task->time_id]*12.5}}%;position:absolute; left:{{$task->start_time_id * 6.25+12.5}}%;display: inline-block;height: 25px;margin-top: 5px;margin-bottom: 5px;text-align:center;color:#202138;">
                                     @endif
                                            {{$task['title']}}</div></a>
                                     @endif

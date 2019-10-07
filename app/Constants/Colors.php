@@ -18,7 +18,6 @@ class Colors
     const INDIGO_COLOR='#d7aefb';
     const DOG_COLOR='#fdcfe8';
     const GOLD_COLOR='#e6c9a8';
-    const TOMATO_COLOR='#e8eaed';
     const SKYBLUE_COLOR='#d29034';
     const NEW_COLOR='#89609e';
     const GREEN_NEW_COLOR='#519839';
@@ -37,7 +36,6 @@ public static function getList()
         self::INDIGO_COLOR,
         self::DOG_COLOR,
         self::GOLD_COLOR,
-        self::TOMATO_COLOR,
         self::SKYBLUE_COLOR,
         self::NEW_COLOR,
         self::GREEN_NEW_COLOR,

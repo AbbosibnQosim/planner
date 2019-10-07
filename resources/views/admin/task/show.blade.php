@@ -26,7 +26,7 @@
                                 <tr>
                                     <td>{{$task['user_name']}}</td>
                                     <td>{{$task['point']}}</td>
-                                    <td>{{$task['time_id']}}</td>
+                                    <td>{{$task['time']}}</td>
                                     <td style="background: {{$task['color']}};color:{{$task['color']}};">Color</td>
                                     <td>{{$statuses[$task['status']]}}</td>
                                     <td>
