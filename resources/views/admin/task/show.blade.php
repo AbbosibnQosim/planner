@@ -15,7 +15,7 @@
                             <tr>
                                 <th style="border: 1px solid #dddddd; text-align: left;padding: 8px;">User Name</th>
                                 <th style="border: 1px solid #dddddd; text-align: left;padding: 8px;">Starting Point</th>
-                                <th style="border: 1px solid #dddddd; text-align: left;padding: 8px;">Completion Type(Days)</th>
+                                <th style="border: 1px solid #dddddd; text-align: left;padding: 8px;">Completion Time(Days)</th>
                                 <th style="border: 1px solid #dddddd; text-align: left;padding: 8px;">Color</th>
                                 <th style="border: 1px solid #dddddd; text-align: left;padding: 8px;">Status</th>
                                 <th style="border: 1px solid #dddddd; text-align: left;padding: 8px;">Actions</th>
