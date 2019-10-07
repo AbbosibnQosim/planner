@@ -25,6 +25,10 @@ class Points
     public static function getList()
     {
         return [
+            self::SAT_MON,
+            self::SAT_AFT,
+            self::SUN_MOR,
+            self::SUN_AFT,
             self::MON_MOR,
             self::MON_AFT,
             self::TUE_MON,
@@ -35,10 +39,6 @@ class Points
             self::THU_AFT,
             self::FRI_MON,
             self::FRI_AFT,
-            self::SAT_MON,
-            self::SAT_AFT,
-            self::SUN_MOR,
-            self::SUN_AFT,
         ];
     }
 

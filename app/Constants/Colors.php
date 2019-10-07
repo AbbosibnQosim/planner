@@ -8,18 +8,22 @@ use Illuminate\Foundation\Auth\User;
 
 class Colors
 {
-    const GREEN_COLOR='#008000';
-    const YELLOW_COLOR='#FFFF00';
-    const BLUE_COLOR='#0000FF';
-    const BLACK_COLOR='#000000';
-    const RED_COLOR='#FF0000';
-    const PINK_COLOR='#FF69B4';
-    const GRAY_COLOR='#808080';
-    const INDIGO_COLOR='#4B0082';
-    const DOG_COLOR='#556B2F';
-    const GOLD_COLOR='#FFD700';
-    const TOMATO_COLOR='#FF6347';
-    const SKYBLUE_COLOR='#87CEEB';
+    const GREEN_COLOR='#fff475';
+    const YELLOW_COLOR='#f28b82';
+    const BLUE_COLOR='#fbbc04';
+    const BLACK_COLOR='#ccff90';
+    const RED_COLOR='#a7ffeb';
+    const PINK_COLOR='#cbf0f8';
+    const GRAY_COLOR='#aecbfa';
+    const INDIGO_COLOR='#d7aefb';
+    const DOG_COLOR='#fdcfe8';
+    const GOLD_COLOR='#e6c9a8';
+    const TOMATO_COLOR='#e8eaed';
+    const SKYBLUE_COLOR='#d29034';
+    const NEW_COLOR='#89609e';
+    const GREEN_NEW_COLOR='#519839';
+    const SOME_COLOR='#838c91';
+    const COLOR_LIME='#00aecc';
 public static function getList()
 {
     return [
@@ -35,6 +39,10 @@ public static function getList()
         self::GOLD_COLOR,
         self::TOMATO_COLOR,
         self::SKYBLUE_COLOR,
+        self::NEW_COLOR,
+        self::GREEN_NEW_COLOR,
+        self::SOME_COLOR,
+        self::COLOR_LIME,
     ];
 }
 
